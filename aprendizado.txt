@@ -1,0 +1,44 @@
+Dia 1
+{
+    CRIAR VARIÁVEIS DENTRO DO ROOT COM{
+        :root {
+            --variavei-nome: valor;
+        }
+    }
+    E UTILIZA-LAS COMO VALORES NO CSS COM{
+        seletor{
+            propriedade: var(--variavel-nome);
+        }
+    }
+
+    UTILIZAR O TRANSFORM: TRANSLATEX() PARA CENTRALIZAR O PRÓPRIO ELEMENTO DENTRO DE UMA CAIXA, INDEPENDENTE DA SUA LARGURA.{
+        left: 50%;
+        transform: translateX(-50%);
+        PS:MUITO ÚTIL NOS CASOS DE POSITION ABSOLUTE E FIXED
+    }
+
+    UTILIZAR O 'BACKGROUND-POSITION' PARA POSICIONAR UMA IMAGEM DE FUNDO{
+        background-position: eixoX eixoY;
+        OU palavras chaves como
+        background-position: center/left top/right bottom;
+    }
+
+    UTILIZAR MEDIAQUERIES E BREAKPOINTS PARA DESIGNS RESPONSIVOS
+    @media(condição){
+        seletores{
+            propriedades: valores;
+        }
+    }
+
+    PSEUDOELEMENTOS são elementos não existentes no html, mas que podemos criar através do CSS com o ::{
+        elemento::after{
+            content: "conteúdo"; 
+            etc...
+        }
+    }
+}
+
+Dia 2
+{
+
+}
