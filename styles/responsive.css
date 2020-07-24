@@ -1,0 +1,40 @@
+@media (max-width: 900px) {
+    /* Em uma largura de no máximo 900px, aplique os estilos: */
+    #page-home {
+        background-position-x: 70vw;
+    }
+    #page-home .content {
+        align-items: center;
+        /* justify-content: center; */
+        text-align: center;
+    }
+
+    #page-home main {
+        align-items: center;
+    }
+
+    #page-home header a{
+        /*TODO:;
+        Nomomento,daráconflitocasoaalturadatelasejapequenademais*/position: absolute;
+        bottom: 48px;
+
+        /* Uma opção mais apropriada do que usar o calc() como valor do 'left' para centralizar o elemento dinamicamente no deixo X, e independente da largura do mesmo */
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+    }
+}
+
+@media (min-width: 1700px) {
+    #page-home{
+        background-position-x: 40vw;
+    }
+}
+@media (max-height: 780px){
+    #page-home{
+        background-position-y: 200px;
+    }
+}

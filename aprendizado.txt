@@ -40,5 +40,29 @@
 
 Dia 2
 {
-Testando git
+    CRIAR CÓDIGOS SEMÂNTICOS DENTRO DE UM FORM, COM AS TAGS FIELDSET E LEGEND
+    
+    ALGUNS USOS DO EMMET NO VISUAL CODE, PARA AUTOPREENCHER ALGUNS CÓDIGOS, COMO:
+        usar o '*n' com o emmet pra criar 'n' elementos:
+        {
+            div*2
+        }
+
+        usar o 'tag1+tag2' criar 2 ou mais tags seguidas:
+        {
+            label+input   
+        }
+        usar o 'tag1>tag2' para criar tags dentro de outras
+        {
+            a>span
+        }
+
+        USAR O CONSOLE DO NAVEGADOR E SELECIONAR OS "OBJETOS" DA PÁGINA, PRA SABER QUAL A MESMA SE REFERENCIA, POR EX: DOCUMENT, QUERYSELECTOR, ETC
+            no console:
+                document.querySelector("body")
+            E ver no html toda tag sendo selecionada
+
+    PODEMOS USAR APIS PARA RECEBER INFORMAÇÕES NO FORMATO JSON, E
+    COMO UTILIZAR O CONCEITO DE PROMISSES > THEN
+
 }
