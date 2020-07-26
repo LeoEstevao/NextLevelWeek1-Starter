@@ -66,3 +66,69 @@ Dia 2
     COMO UTILIZAR O CONCEITO DE PROMISSES > THEN
 
 }
+
+Dia 3
+{
+    CTRL + D 1x para selecionar uma palavra inteira, e CTRL + D novamente para escolher prox referência selecionada
+
+    COMO USAR GRID:
+    GRID FUNCIONA COMO FLEX, ONDE ELE TORNA SEUS ELEMENTOS FILHOS COMO UM FLEX, PORÉM PODENDO SEPARAR INTERNAMENTE, COMO ELES SERÃO SEPARADOS (COM AS COLUNAS E LINHAS), ASSIM PODENDO DEFINIR QUANTIDADE DESEJADA, E TAMANHOS FIXOS OU FRACIONADOS/FLEXIVEIS (USANDO O 'FR')
+    grid-template-columns: 1fr 2fr 1fr; 
+
+    PODEMOS TAMBÉM DEFINIR ESPAÇAMENTO APENAS ENTRE OS ELEMENTOS DENTRO DO GRID, SEM ALTERNAR MARGENS EXTERNAS:
+    GAP: 16px;
+
+    USAR CSS PARA REMOVER EVENTO DE CLICKS DE ALGUNS ELEMENTOS:
+    seletor{
+        pointer-event: none;
+    }
+
+    USAR 'DATA' NO HTML E VER O VALOR NO JS:
+    {
+        <div data-id = "1" ></div>
+        console.log(document.querySelector("div").dataset.id);
+    }
+
+    USAR A PROPRIEDADE 'classlist' DE UM ELEMENTO, E CHAMAR A FUNCAO TOGGLE, QUE ADICIONARA OU REMOVERA UMA CLASSE:
+        elemento.classList.toggle("classe");
+
+
+    MÉTODO filter() DE UM ARRAY, ONDE ELE VARRE UM ARRAY USANDO ALGUMA CONDIÇÃO PASSADA EM UMA FUNÇÃO ANÔNIMA, E CASO RETORNE TRUE, ELE PASSA O VALOR PARA OUTRO ARRAY, CASO FALSE, ELE EXCLUI:
+        arrayFiltrado = array.filter( ( ) => { 'Lógica que retorna true ou false' } )
+
+    PESQUISAR UM VALOR DENTRO DE UM ARRAY E RETORNAR O ÍNDICE:
+        array.findIndex( ( ) => { 'Lógica que retorna true ou false' } )
+
+    PODEMOS USAR ALPHA NO HEXADECIMAL TAMBÉM, BASTA ACRESCENTAR 2 VALORES NO FINAL (INDO DE 0 A F):
+        background-color: #ffffff55;
+
+    SHIFT + CLICK NA SETINHA QUE ESCONDE UM BLOCO DE CÓDIGO, ESCONDERÁ APENAS OS BLOCO DE CÓDIGOS NETOS. TESTE ABAIXO:
+        pai{
+            filho1{
+                neto 1
+                neto 2
+            }
+            filho 2{
+                neto 3
+                neto 4
+            }
+        }
+
+    PODEMOS SELECIONAR UM ELEMENTO, DAR CTRL + F (para pesquisa-lo em todo arquivo), clicar na seta e dar replace all
+
+    PODEMOS CRIAR UM PSEUDO-ELEMENTO COM PURO CSS, SEM PRECISAR CRIAR NADA NO HTML, PRA CRIAR COMO EXEMPLO, ALGUMA FAIXA DE PLANO DE FUNDO:
+    body::after {
+        content: "";
+        position: fixed;
+        bottom: 0;
+        top: 260px;
+        left: 0;
+        right: 0;
+        background: #fff;
+        z-index: -1;
+    }
+
+    PODEMOS USAR O VALOR 'COVER' DA PROPRIEDADE 'OBJECT-FIT' PARA AO INVES DE DISTORCER IMAGENS QUE NÃO CAIBAM EM UM ELEMENTO, SIMPLESMENTE CENTRALIZA-LA E ESCONDER/CORTAR TODO EXCESSO, REMOVENDO PROBLEMAS DE DISTORÇÃO DE IMAGENS, OU DE QUEBRA DE LAYOUT CASO IMAGENS DE DIFERENTES TAMANHO APAREÇAM:
+        object-fit: cover;
+}
+

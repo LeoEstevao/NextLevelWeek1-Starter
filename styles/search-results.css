@@ -1,0 +1,94 @@
+/* Criar uma faixa com pseudoelemento ::AFTER que iniciará debaixo, e parará quando chegar em 260px do top da tela */
+body::after {
+    content: "";
+    position: fixed;
+    bottom: 0;
+    top: 260px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: -1;
+}
+
+#page-search-results {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+
+#page-search-results header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 48px;
+}
+
+#page-search-results header a{
+    color: var(--tittle-color);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+#page-search-results header a span {
+    background: url('../img/arrow-left.svg');
+    height: 24px;
+    width: 24px;
+    display: flex;
+    margin-right: 16px;
+}
+#page-search-results main {
+    margin: 48px;
+}
+
+
+#page-search-results main h4 {
+    font-weight: normal;
+    font-family: Roboto, sans-serif;
+    margin-bottom: 32px;
+}
+
+#page-search-results main .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    gap: 24px;
+
+}
+#page-search-results main img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    -webkit-border-radius: 8px 8px 0 0;
+    -moz-border-radius: 8px 8px 0 0;
+    -ms-border-radius: 8px 8px 0 0;
+    -o-border-radius: 8px 8px 0 0;
+}
+
+
+#page-search-results main .card h1 {
+    margin-top: 32px;
+    font-size: 36px;
+    line-height: 41px;
+    color: #322153;
+}
+
+
+#page-search-results main .card h3 {
+    margin: 20px 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 34px;
+    color: var(--primary-color);
+}
+
+#page-search-results main .card p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #6c6c80;
+}
+

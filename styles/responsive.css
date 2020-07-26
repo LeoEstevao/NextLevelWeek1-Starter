@@ -26,6 +26,14 @@
         -ms-transform: translateX(-50%);
         -o-transform: translateX(-50%);
     }
+
+    #page-search-results main .cards {
+        grid-template-columns: 1fr;
+    }
+
+    #page-search-results main img {
+        height: 200px;
+    }
 }
 
 @media (min-width: 1700px) {
