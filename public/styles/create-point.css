@@ -20,7 +20,7 @@
 }
 
 #page-create-point header a span {
-    background: url('../img/arrow-left.svg');
+    background: url('../assets/img/arrow-left.svg');
     height: 24px;
     width: 24px;
     display: flex;
@@ -38,7 +38,7 @@
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
 }
-/* MARGIN ?????? */
+
 #page-create-point form h1 {
     font-size: 36px;
 }
@@ -48,12 +48,20 @@
     border: 0;
 }
 
-#page-create-point form legenda {
+#page-create-point form legend {
     margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 #page-create-point form legend h2 {
     font-size: 24px;
+}
+
+#page-create-point form legend span {
+    color: var(--title-color);
 }
 
 #page-create-point form .field {

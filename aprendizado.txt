@@ -132,3 +132,44 @@ Dia 3
         object-fit: cover;
 }
 
+Dia 4 
+{
+    USAR NODE
+    INSTALAR O NODE E VERIFICAR VERSAO COM:
+        node -v
+
+    INICIAR UM PROJETO NODE COM:
+        npm init -y
+
+    E ALTERAR O PACKAGE.JSON NA DESC 'MAIN' PARA O SCRIPT PRINCIPAL DO PROJETO
+
+    INSTALAR O EXPRESS:
+        npm install express
+
+    PS: nao eh recomendavel, enviar node_modules no github... adicionar ao git ignore?
+
+    npm start
+
+    Instalar template engine "nunjucks"
+        npm install nunjucks
+
+    instalar nunjucks template (Usado p/ colorir sintaxe do nunjucks no html e alguns 'alias' de auto-complete). 
+    Após a instalação, basta adicionar/remover configuração padrão do vscode para alguns 'bugs' no vscode
+    CTRL + SHIFT + P > Pesquisar por json settings e abrir > :
+    
+    "files.associations": {
+        "*.html" : "njk"
+    },
+    "emmet.includeLanguages": {
+        "njk": "html"
+    },
+    "material-icon-theme.files.associations": {
+        // "*.html": "nunjucks"
+        "*.html": "html"
+    }
+
+    extends do nunjucks funciona da seguinte maneira:
+    A partir do momento que usamos o extends, tudo que estiver na página extendida será recuperado, e tudo que estiver na página carregada no browser (página da url) deverá estar dentro de blocks, caso contrário, será excluido.
+    PS: Os blocks devem estar presentes nas 2 páginas, (explicar melhor)!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+}
