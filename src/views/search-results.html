@@ -11,16 +11,38 @@
 
 {% block content %}
     {% include "partials/page-header.html" %}
-
     <main>
         <h4>
-            <strong>2 pontos</strong>
+            {# Usamos o '{{}}', apenas para MOSTRAR o valor de alguma var.
+            Para logicas e etc, damos apenas o nome da mesma. Similar ao 'echo' 
+            PS: Se fosse usando dentro de algum js, usariamos o {{}} #}
+            {% if total > 0 %}
+            <strong>{{ total }} pontos</strong>
             encontrados
+            {% else %}
+            <strong>Nenhum</strong>
+            local encontrado
+            {% endif %}
         </h4>
 
         <div class="cards">
 
-            <div class="card">
+
+            {% for place in places %}
+                <div class="card">
+                    <img src="{{ place.image }}" alt="{{ place.name }}">
+                    <h1>{{ place.name }}</h1>
+                    <h3>{{ place.items }}</h3>
+                    <p>{{place.city}}, {{place.state}}
+                        <br/>
+                        {{place.address}}
+                        <br/>
+                        {{place.address2}}
+                    </p>
+                </div>
+            {% endfor %}
+
+            {#<div class="card">
                 <img src="https://images.unsplash.com/photo-1481761289552-381112059e05?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Colectoria">
                 <h1>Colectoria</h1>
                 <h3>Resíduos Eletrônicos, Lâmpadas</h3>
@@ -42,55 +64,7 @@
                     <br/>
                     N° 260
                 </p>
-            </div>
-
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1481761289552-381112059e05?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Colectoria">
-                <h1>Colectoria</h1>
-                <h3>Resíduos Eletrônicos, Lâmpadas</h3>
-                <p>Rio do Sul, Santa Catarina
-                    <br/>
-                    Guilherme Gemballa, Jardim América
-                    <br/>
-                    N° 260
-                </p>
-            </div>
-
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1528323273322-d81458248d40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Paperside">
-                <h1>Paperside</h1>
-                <h3>Papéis e Papelão</h3>
-                <p>Rio do Sul, Santa Catarina
-                    <br/>
-                    Guilherme Gemballa, Jardim América
-                    <br/>
-                    N° 260
-                </p>
-            </div>
-
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1481761289552-381112059e05?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Colectoria">
-                <h1>Colectoria</h1>
-                <h3>Resíduos Eletrônicos, Lâmpadas</h3>
-                <p>Rio do Sul, Santa Catarina
-                    <br/>
-                    Guilherme Gemballa, Jardim América
-                    <br/>
-                    N° 260
-                </p>
-            </div>
-
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1528323273322-d81458248d40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Paperside">
-                <h1>Paperside</h1>
-                <h3>Papéis e Papelão</h3>
-                <p>Rio do Sul, Santa Catarina
-                    <br/>
-                    Guilherme Gemballa, Jardim América
-                    <br/>
-                    N° 260
-                </p>
-            </div>
+            </div> #}
 
         </div>
     </main>

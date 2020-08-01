@@ -128,7 +128,7 @@ function handleSelectedItem(event) {
         console.log(selectedItems);
     // Se o item clicado não estava selecionado
     }else{
-        selectedItems.push(parseInt(itemId));
+        selectedItems.push(itemId);
         console.log(selectedItems);
     }
 

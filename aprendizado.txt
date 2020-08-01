@@ -173,3 +173,21 @@ Dia 4
     PS: Os blocks devem estar presentes nas 2 páginas, (explicar melhor)!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 }
+
+Dia 5
+{
+    COMO USAR sqlite3 para criar um bd que ficara reservado na propria aplicacao
+    npm install sqlite3
+
+    Usar Comandos SQL
+
+    Trabalhar com VERBOS HTTP (metodos GET e POST)
+
+
+
+    Usar crase para poder quebrar linhas sem arruinar o código
+
+    Callback seria uma função que ficará em aguardo, e será chamada após a conclusão de algo que esteja no mesmo contexto dessa callback, como um callback após uma query ser executada.
+
+
+}

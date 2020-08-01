@@ -2,7 +2,8 @@
     background: #0e0a14ef;
     height: 100vh;
     width: 100vw;
-    position: absolute;
+    position: absolute; 
+    /* position: fixed;  TODO: Modal do create point nao centraliza*/
     top: 0;
     display: flex;
     justify-content: center;
@@ -86,4 +87,16 @@
 #modal form button:hover {
     background: #2fb85e;
     cursor: pointer;
+}
+
+/* MODAL CREATED POINT */
+#modal.point .content {
+    /* position: fixed; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#modal.point .content h1{
+    color: #fff;
+    margin-top: 32px;
 }
